@@ -4,6 +4,7 @@ namespace Principles
 {
     class Program
     {
+        // 新創公司製造多功能用途飛行載具，但為了維持公司營運，也必須生產平價交通工具維持營收。
         public interface IVehicle
         {
             void Drive();
@@ -22,6 +23,7 @@ namespace Principles
             }
         }
 
+        // 生產平價汽車
         public class Car : IVehicle
         {
             public void Drive()
@@ -31,6 +33,7 @@ namespace Principles
 
             public void Fly()
             {
+                // 無法實作，難道就留空白?
                 Console.WriteLine("我無法飛行");
             }
         }
